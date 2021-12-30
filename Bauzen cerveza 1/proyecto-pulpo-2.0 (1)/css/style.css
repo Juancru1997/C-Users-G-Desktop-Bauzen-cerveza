@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Copperplate-Bold';
+    src: url('../fonts/copperplate-bold.ttf');
+} 
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family:'Copperplate-Bold', verdana;
+    background: rgb(19, 20, 20) !important;
+    color: white !important;
+}
+
+/* Header */
+.logos {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logos img {
+    height: 100px;
+}
+
+nav .nav-item {
+    font-size: 20px;
+}
+
+/* Sections */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/3 botellas diferente.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.productos {
+    width: 100% !important;
+    padding: 50px 0 !important;
+}
+
+.productos .row {
+    width: 100% !important;
+    justify-content: space-evenly;
+}
+
+.productos .productos-cards {
+    width: 200px;
+}
+
+.productos .productos-cards h3 {
+    text-align: center;
+    font-family: bold;
+}
+
+.golden h3 {
+    color: #FFE601;
+}
+.scotish h3 {
+    color: #FF0101;
+}
+.ipa h3 {
+    color: #0C5A0A;
+}
+
+.productos .productos-cards p {
+    font-size: 20px;
+}
+
+.productos .productos-cards .img {
+    width: 100%;
+    height: 200px;
+    padding: 10px 0 !important;
+    overflow: hidden;
+}
+
+.productos .productos-cards .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.historia {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-image: url('../img/3\ botellas\ chicas.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.historia .fondo-negro {
+    width: 100%;
+    height: 100%;
+    background: #0007;
+    padding: 0 200px !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto {
+    width: 100%;
+    background-image: url('../img/logo\ bauzen.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.contacto .fondo-blanco {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 !important;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.contacto h2 {
+    text-align: center;
+    padding: 50px 0 !important;
+    font-size: 40px;
+}
+
+.contacto .row {
+    justify-content: space-evenly;
+}
+
+.contacto .contacto-cards {
+    width: 250px;
+    text-align: center;
+}
+
+.contacto .contacto-cards h3 {
+    padding-bottom: 20px !important;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 10px 50px !important;
+    text-align: center;
+}
+
+footer .row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-info {
+    width: 200px !important;
+}
+
+.footer-menu {
+    width: 100px !important;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .logos h2 {
+        display: none;
+    }
+    .historia .fondo-negro {
+        padding: 0 20px !important;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    .historia .fondo-negro {
+        padding: 0 100px !important;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .productos .row {
+        margin: auto !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .productos .productos-cards {
+        width: 70%;
+        padding: 20px 0 !important;
+    }
+
+    .contacto .row {
+        margin: auto !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contacto .contacto-cards {
+        width: 70%;
+        padding: 20px 0 !important;
+    }
+
+}
